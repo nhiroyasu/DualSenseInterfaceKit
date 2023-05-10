@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F7692522A0A6329003167E5 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7692502A0A62E0003167E5 /* libusb-1.0.0.dylib */; };
+		4F7692532A0A6329003167E5 /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 4F7692502A0A62E0003167E5 /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4F7FA4812A07CA6700DB01A9 /* DualSenseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4802A07CA6700DB01A9 /* DualSenseEvent.swift */; };
+		4F7FA4832A07CAA700DB01A9 /* DualSenseStickValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4822A07CAA700DB01A9 /* DualSenseStickValue.swift */; };
+		4F7FA4852A07D6EF00DB01A9 /* DualSenseEventInspectionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4842A07D6EF00DB01A9 /* DualSenseEventInspectionUseCase.swift */; };
+		4F7FA4872A07DAF000DB01A9 /* DualSenseDirectionalButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4862A07DAF000DB01A9 /* DualSenseDirectionalButtonType.swift */; };
+		4F7FA4892A07E33600DB01A9 /* DualSenseEventStreamingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4882A07E33600DB01A9 /* DualSenseEventStreamingUseCase.swift */; };
+		4F7FA48B2A07E57700DB01A9 /* ApplicationLifeCycleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA48A2A07E57700DB01A9 /* ApplicationLifeCycleController.swift */; };
+		4F7FA48D2A07E96800DB01A9 /* DualSenseReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA48C2A07E96800DB01A9 /* DualSenseReportController.swift */; };
+		4F7FA4912A07EF2700DB01A9 /* DualSenseReportSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4902A07EF2700DB01A9 /* DualSenseReportSubscriber.swift */; };
+		4F7FA4942A07F2BF00DB01A9 /* SubjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4932A07F2BF00DB01A9 /* SubjectContainer.swift */; };
+		4F81DA5A2A06821200347945 /* USBDeivceConnectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA592A06821200347945 /* USBDeivceConnectionInfo.swift */; };
+		4F81DA5C2A0682BC00347945 /* HIDDeviceUSBReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA5B2A0682BC00347945 /* HIDDeviceUSBReader.swift */; };
+		4F81DA602A06884E00347945 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA5F2A06884E00347945 /* MainView.swift */; };
+		4F81DA632A0688C900347945 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA622A0688C900347945 /* MainController.swift */; };
+		4F81DA662A06896D00347945 /* DualSenseReportObservingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA652A06896D00347945 /* DualSenseReportObservingUseCase.swift */; };
+		4F81DA682A068BC600347945 /* MainViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA672A068BC600347945 /* MainViewState.swift */; };
+		4F81DA6B2A068EFA00347945 /* DualSenseReportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA6A2A068EFA00347945 /* DualSenseReportPresenter.swift */; };
+		4F81DA6D2A06977200347945 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA6C2A06977200347945 /* MainStore.swift */; };
+		4F81DA712A0699DD00347945 /* AlertDialogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA702A0699DD00347945 /* AlertDialogService.swift */; };
+		4F81DA732A069BE400347945 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA722A069BE400347945 /* AlertPresenter.swift */; };
+		4FDAE53E2A05F2DA00F66414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAE53D2A05F2DA00F66414 /* AppDelegate.swift */; };
+		4FDAE5402A05F2DA00F66414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAE53F2A05F2DA00F66414 /* ViewController.swift */; };
+		4FDAE5422A05F2DB00F66414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDAE5412A05F2DB00F66414 /* Assets.xcassets */; };
+		4FDAE5452A05F2DB00F66414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDAE5432A05F2DB00F66414 /* Main.storyboard */; };
+		4FDAE5562A05FB9D00F66414 /* dual_sense_signal_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAE5552A05FB9D00F66414 /* dual_sense_signal_reader.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F7692542A0A6329003167E5 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4F7692532A0A6329003167E5 /* libusb-1.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F7692502A0A62E0003167E5 /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.dylib"; sourceTree = "<group>"; };
+		4F7FA4802A07CA6700DB01A9 /* DualSenseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseEvent.swift; sourceTree = "<group>"; };
+		4F7FA4822A07CAA700DB01A9 /* DualSenseStickValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseStickValue.swift; sourceTree = "<group>"; };
+		4F7FA4842A07D6EF00DB01A9 /* DualSenseEventInspectionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseEventInspectionUseCase.swift; sourceTree = "<group>"; };
+		4F7FA4862A07DAF000DB01A9 /* DualSenseDirectionalButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseDirectionalButtonType.swift; sourceTree = "<group>"; };
+		4F7FA4882A07E33600DB01A9 /* DualSenseEventStreamingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseEventStreamingUseCase.swift; sourceTree = "<group>"; };
+		4F7FA48A2A07E57700DB01A9 /* ApplicationLifeCycleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLifeCycleController.swift; sourceTree = "<group>"; };
+		4F7FA48C2A07E96800DB01A9 /* DualSenseReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseReportController.swift; sourceTree = "<group>"; };
+		4F7FA4902A07EF2700DB01A9 /* DualSenseReportSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseReportSubscriber.swift; sourceTree = "<group>"; };
+		4F7FA4932A07F2BF00DB01A9 /* SubjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectContainer.swift; sourceTree = "<group>"; };
+		4F7FA4952A07F93600DB01A9 /* DualSenseInterfaceKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DualSenseInterfaceKit.entitlements; sourceTree = "<group>"; };
+		4F81DA592A06821200347945 /* USBDeivceConnectionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBDeivceConnectionInfo.swift; sourceTree = "<group>"; };
+		4F81DA5B2A0682BC00347945 /* HIDDeviceUSBReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDDeviceUSBReader.swift; sourceTree = "<group>"; };
+		4F81DA5F2A06884E00347945 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4F81DA622A0688C900347945 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		4F81DA652A06896D00347945 /* DualSenseReportObservingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseReportObservingUseCase.swift; sourceTree = "<group>"; };
+		4F81DA672A068BC600347945 /* MainViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewState.swift; sourceTree = "<group>"; };
+		4F81DA6A2A068EFA00347945 /* DualSenseReportPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseReportPresenter.swift; sourceTree = "<group>"; };
+		4F81DA6C2A06977200347945 /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		4F81DA702A0699DD00347945 /* AlertDialogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDialogService.swift; sourceTree = "<group>"; };
+		4F81DA722A069BE400347945 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		4FDAE53A2A05F2DA00F66414 /* DualSenseInterfaceKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DualSenseInterfaceKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDAE53D2A05F2DA00F66414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FDAE53F2A05F2DA00F66414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FDAE5412A05F2DB00F66414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FDAE5442A05F2DB00F66414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FDAE54C2A05F2EB00F66414 /* DualSenseInterfaceKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DualSenseInterfaceKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FDAE5532A05FB4B00F66414 /* libusb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libusb.h; sourceTree = "<group>"; };
+		4FDAE5542A05FB9D00F66414 /* dual_sense_signal_reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dual_sense_signal_reader.h; sourceTree = "<group>"; };
+		4FDAE5552A05FB9D00F66414 /* dual_sense_signal_reader.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dual_sense_signal_reader.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FDAE5372A05F2DA00F66414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7692522A0A6329003167E5 /* libusb-1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F7FA47F2A07CA5000DB01A9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4F7FA48F2A07EF0C00DB01A9 /* Domain */,
+				4F7FA48E2A07EEFE00DB01A9 /* Subscriber */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4F7FA48E2A07EEFE00DB01A9 /* Subscriber */ = {
+			isa = PBXGroup;
+			children = (
+				4F7FA4902A07EF2700DB01A9 /* DualSenseReportSubscriber.swift */,
+			);
+			path = Subscriber;
+			sourceTree = "<group>";
+		};
+		4F7FA48F2A07EF0C00DB01A9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4F7FA4802A07CA6700DB01A9 /* DualSenseEvent.swift */,
+				4F7FA4822A07CAA700DB01A9 /* DualSenseStickValue.swift */,
+				4F7FA4862A07DAF000DB01A9 /* DualSenseDirectionalButtonType.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4F7FA4922A07F29500DB01A9 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				4F7FA4932A07F2BF00DB01A9 /* SubjectContainer.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		4F81DA5D2A0687DC00347945 /* USB */ = {
+			isa = PBXGroup;
+			children = (
+				4F81DA592A06821200347945 /* USBDeivceConnectionInfo.swift */,
+				4F81DA5B2A0682BC00347945 /* HIDDeviceUSBReader.swift */,
+				4FDAE5532A05FB4B00F66414 /* libusb.h */,
+				4FDAE5542A05FB9D00F66414 /* dual_sense_signal_reader.h */,
+				4FDAE5552A05FB9D00F66414 /* dual_sense_signal_reader.c */,
+				4F7692502A0A62E0003167E5 /* libusb-1.0.0.dylib */,
+			);
+			path = USB;
+			sourceTree = "<group>";
+		};
+		4F81DA5E2A06883400347945 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F81DA5F2A06884E00347945 /* MainView.swift */,
+				4F81DA672A068BC600347945 /* MainViewState.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F81DA612A0688BC00347945 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F81DA622A0688C900347945 /* MainController.swift */,
+				4F7FA48A2A07E57700DB01A9 /* ApplicationLifeCycleController.swift */,
+				4F7FA48C2A07E96800DB01A9 /* DualSenseReportController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4F81DA642A06895900347945 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4F81DA652A06896D00347945 /* DualSenseReportObservingUseCase.swift */,
+				4F7FA4842A07D6EF00DB01A9 /* DualSenseEventInspectionUseCase.swift */,
+				4F7FA4882A07E33600DB01A9 /* DualSenseEventStreamingUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		4F81DA692A068EE800347945 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4F81DA6A2A068EFA00347945 /* DualSenseReportPresenter.swift */,
+				4F81DA722A069BE400347945 /* AlertPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4F81DA6E2A06977600347945 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				4F81DA6C2A06977200347945 /* MainStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		4F81DA6F2A0699D100347945 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4F81DA702A0699DD00347945 /* AlertDialogService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4FDAE5312A05F2DA00F66414 = {
+			isa = PBXGroup;
+			children = (
+				4FDAE53C2A05F2DA00F66414 /* CLangTraining */,
+				4FDAE53B2A05F2DA00F66414 /* Products */,
+				4FDAE5502A05FADE00F66414 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FDAE53B2A05F2DA00F66414 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FDAE53A2A05F2DA00F66414 /* DualSenseInterfaceKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FDAE53C2A05F2DA00F66414 /* CLangTraining */ = {
+			isa = PBXGroup;
+			children = (
+				4F81DA5D2A0687DC00347945 /* USB */,
+				4F81DA5E2A06883400347945 /* View */,
+				4F81DA6E2A06977600347945 /* Store */,
+				4F81DA692A068EE800347945 /* Presenter */,
+				4F81DA612A0688BC00347945 /* Controller */,
+				4F81DA642A06895900347945 /* UseCase */,
+				4F81DA6F2A0699D100347945 /* Service */,
+				4F7FA4922A07F29500DB01A9 /* Container */,
+				4F7FA47F2A07CA5000DB01A9 /* Entity */,
+				4FDAE53D2A05F2DA00F66414 /* AppDelegate.swift */,
+				4FDAE53F2A05F2DA00F66414 /* ViewController.swift */,
+				4FDAE5412A05F2DB00F66414 /* Assets.xcassets */,
+				4FDAE5432A05F2DB00F66414 /* Main.storyboard */,
+				4F7FA4952A07F93600DB01A9 /* DualSenseInterfaceKit.entitlements */,
+				4FDAE54C2A05F2EB00F66414 /* DualSenseInterfaceKit-Bridging-Header.h */,
+			);
+			path = CLangTraining;
+			sourceTree = "<group>";
+		};
+		4FDAE5502A05FADE00F66414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FDAE5392A05F2DA00F66414 /* DualSenseInterfaceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FDAE5492A05F2DB00F66414 /* Build configuration list for PBXNativeTarget "DualSenseInterfaceKit" */;
+			buildPhases = (
+				4FDAE5362A05F2DA00F66414 /* Sources */,
+				4FDAE5372A05F2DA00F66414 /* Frameworks */,
+				4FDAE5382A05F2DA00F66414 /* Resources */,
+				4F7692542A0A6329003167E5 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DualSenseInterfaceKit;
+			productName = CLangTraining;
+			productReference = 4FDAE53A2A05F2DA00F66414 /* DualSenseInterfaceKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FDAE5322A05F2DA00F66414 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4FDAE5392A05F2DA00F66414 = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = 4FDAE5352A05F2DA00F66414 /* Build configuration list for PBXProject "CLangTraining" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FDAE5312A05F2DA00F66414;
+			productRefGroup = 4FDAE53B2A05F2DA00F66414 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FDAE5392A05F2DA00F66414 /* DualSenseInterfaceKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FDAE5382A05F2DA00F66414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDAE5422A05F2DB00F66414 /* Assets.xcassets in Resources */,
+				4FDAE5452A05F2DB00F66414 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FDAE5362A05F2DA00F66414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7FA4942A07F2BF00DB01A9 /* SubjectContainer.swift in Sources */,
+				4F7FA48B2A07E57700DB01A9 /* ApplicationLifeCycleController.swift in Sources */,
+				4F81DA632A0688C900347945 /* MainController.swift in Sources */,
+				4F81DA732A069BE400347945 /* AlertPresenter.swift in Sources */,
+				4F81DA682A068BC600347945 /* MainViewState.swift in Sources */,
+				4F7FA48D2A07E96800DB01A9 /* DualSenseReportController.swift in Sources */,
+				4FDAE5402A05F2DA00F66414 /* ViewController.swift in Sources */,
+				4F7FA4892A07E33600DB01A9 /* DualSenseEventStreamingUseCase.swift in Sources */,
+				4F81DA6B2A068EFA00347945 /* DualSenseReportPresenter.swift in Sources */,
+				4F7FA4812A07CA6700DB01A9 /* DualSenseEvent.swift in Sources */,
+				4F7FA4832A07CAA700DB01A9 /* DualSenseStickValue.swift in Sources */,
+				4F81DA6D2A06977200347945 /* MainStore.swift in Sources */,
+				4F81DA602A06884E00347945 /* MainView.swift in Sources */,
+				4F7FA4912A07EF2700DB01A9 /* DualSenseReportSubscriber.swift in Sources */,
+				4F7FA4872A07DAF000DB01A9 /* DualSenseDirectionalButtonType.swift in Sources */,
+				4F81DA712A0699DD00347945 /* AlertDialogService.swift in Sources */,
+				4F81DA5C2A0682BC00347945 /* HIDDeviceUSBReader.swift in Sources */,
+				4F7FA4852A07D6EF00DB01A9 /* DualSenseEventInspectionUseCase.swift in Sources */,
+				4FDAE5562A05FB9D00F66414 /* dual_sense_signal_reader.c in Sources */,
+				4FDAE53E2A05F2DA00F66414 /* AppDelegate.swift in Sources */,
+				4F81DA5A2A06821200347945 /* USBDeivceConnectionInfo.swift in Sources */,
+				4F81DA662A06896D00347945 /* DualSenseReportObservingUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FDAE5432A05F2DB00F66414 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FDAE5442A05F2DB00F66414 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FDAE5472A05F2DB00F66414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FDAE5482A05F2DB00F66414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4FDAE54A2A05F2DB00F66414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CLangTraining/DualSenseInterfaceKit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 2CMV7D36JC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/libusb/1.0.26/lib,
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/libusb/1.0.26/lib,
+					"$(PROJECT_DIR)/CLangTraining/USB",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhiro1109.DualSenseInterfaceKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CLangTraining/DualSenseInterfaceKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4FDAE54B2A05F2DB00F66414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CLangTraining/DualSenseInterfaceKit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 2CMV7D36JC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/libusb/1.0.26/lib,
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/libusb/1.0.26/lib,
+					"$(PROJECT_DIR)/CLangTraining/USB",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhiro1109.DualSenseInterfaceKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CLangTraining/DualSenseInterfaceKit-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FDAE5352A05F2DA00F66414 /* Build configuration list for PBXProject "CLangTraining" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDAE5472A05F2DB00F66414 /* Debug */,
+				4FDAE5482A05F2DB00F66414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FDAE5492A05F2DB00F66414 /* Build configuration list for PBXNativeTarget "DualSenseInterfaceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDAE54A2A05F2DB00F66414 /* Debug */,
+				4FDAE54B2A05F2DB00F66414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FDAE5322A05F2DA00F66414 /* Project object */;
+}
