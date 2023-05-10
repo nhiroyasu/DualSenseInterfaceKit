@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F7692522A0A6329003167E5 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7692502A0A62E0003167E5 /* libusb-1.0.0.dylib */; };
-		4F7692532A0A6329003167E5 /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 4F7692502A0A62E0003167E5 /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4F7FA4812A07CA6700DB01A9 /* DualSenseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4802A07CA6700DB01A9 /* DualSenseEvent.swift */; };
 		4F7FA4832A07CAA700DB01A9 /* DualSenseStickValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4822A07CAA700DB01A9 /* DualSenseStickValue.swift */; };
 		4F7FA4852A07D6EF00DB01A9 /* DualSenseEventInspectionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FA4842A07D6EF00DB01A9 /* DualSenseEventInspectionUseCase.swift */; };
@@ -28,6 +26,7 @@
 		4F81DA6D2A06977200347945 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA6C2A06977200347945 /* MainStore.swift */; };
 		4F81DA712A0699DD00347945 /* AlertDialogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA702A0699DD00347945 /* AlertDialogService.swift */; };
 		4F81DA732A069BE400347945 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81DA722A069BE400347945 /* AlertPresenter.swift */; };
+		4FCCA27E2A0BD672007F2148 /* libusb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCCA27D2A0BD672007F2148 /* libusb-1.0.a */; };
 		4FDAE53E2A05F2DA00F66414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAE53D2A05F2DA00F66414 /* AppDelegate.swift */; };
 		4FDAE5402A05F2DA00F66414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAE53F2A05F2DA00F66414 /* ViewController.swift */; };
 		4FDAE5422A05F2DB00F66414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDAE5412A05F2DB00F66414 /* Assets.xcassets */; };
@@ -42,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4F7692532A0A6329003167E5 /* libusb-1.0.0.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +48,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4F7692502A0A62E0003167E5 /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.dylib"; sourceTree = "<group>"; };
 		4F7FA4802A07CA6700DB01A9 /* DualSenseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseEvent.swift; sourceTree = "<group>"; };
 		4F7FA4822A07CAA700DB01A9 /* DualSenseStickValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseStickValue.swift; sourceTree = "<group>"; };
 		4F7FA4842A07D6EF00DB01A9 /* DualSenseEventInspectionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSenseEventInspectionUseCase.swift; sourceTree = "<group>"; };
@@ -71,6 +68,7 @@
 		4F81DA6C2A06977200347945 /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
 		4F81DA702A0699DD00347945 /* AlertDialogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDialogService.swift; sourceTree = "<group>"; };
 		4F81DA722A069BE400347945 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		4FCCA27D2A0BD672007F2148 /* libusb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libusb-1.0.a"; sourceTree = "<group>"; };
 		4FDAE53A2A05F2DA00F66414 /* DualSenseInterfaceKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DualSenseInterfaceKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDAE53D2A05F2DA00F66414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDAE53F2A05F2DA00F66414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F7692522A0A6329003167E5 /* libusb-1.0.0.dylib in Frameworks */,
+				4FCCA27E2A0BD672007F2148 /* libusb-1.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +135,7 @@
 				4FDAE5532A05FB4B00F66414 /* libusb.h */,
 				4FDAE5542A05FB9D00F66414 /* dual_sense_signal_reader.h */,
 				4FDAE5552A05FB9D00F66414 /* dual_sense_signal_reader.c */,
-				4F7692502A0A62E0003167E5 /* libusb-1.0.0.dylib */,
+				4FCCA27D2A0BD672007F2148 /* libusb-1.0.a */,
 			);
 			path = USB;
 			sourceTree = "<group>";
@@ -484,14 +482,9 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					/opt/homebrew/Cellar/libusb/1.0.26/lib,
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/opt/homebrew/Cellar/libusb/1.0.26/lib,
 					"$(PROJECT_DIR)/DualSenseInterfaceKit/USB",
 				);
 				MARKETING_VERSION = 1.0;
@@ -522,14 +515,9 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					/opt/homebrew/Cellar/libusb/1.0.26/lib,
-					"@executable_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/opt/homebrew/Cellar/libusb/1.0.26/lib,
 					"$(PROJECT_DIR)/DualSenseInterfaceKit/USB",
 				);
 				MARKETING_VERSION = 1.0;
