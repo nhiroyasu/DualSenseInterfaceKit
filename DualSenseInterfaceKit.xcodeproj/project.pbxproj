@@ -199,7 +199,7 @@
 		4FDAE5312A05F2DA00F66414 = {
 			isa = PBXGroup;
 			children = (
-				4FDAE53C2A05F2DA00F66414 /* CLangTraining */,
+				4FDAE53C2A05F2DA00F66414 /* DualSenseInterfaceKit */,
 				4FDAE53B2A05F2DA00F66414 /* Products */,
 				4FDAE5502A05FADE00F66414 /* Frameworks */,
 			);
@@ -213,7 +213,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4FDAE53C2A05F2DA00F66414 /* CLangTraining */ = {
+		4FDAE53C2A05F2DA00F66414 /* DualSenseInterfaceKit */ = {
 			isa = PBXGroup;
 			children = (
 				4F81DA5D2A0687DC00347945 /* USB */,
@@ -232,7 +232,7 @@
 				4F7FA4952A07F93600DB01A9 /* DualSenseInterfaceKit.entitlements */,
 				4FDAE54C2A05F2EB00F66414 /* DualSenseInterfaceKit-Bridging-Header.h */,
 			);
-			path = CLangTraining;
+			path = DualSenseInterfaceKit;
 			sourceTree = "<group>";
 		};
 		4FDAE5502A05FADE00F66414 /* Frameworks */ = {
@@ -279,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4FDAE5352A05F2DA00F66414 /* Build configuration list for PBXProject "CLangTraining" */;
+			buildConfigurationList = 4FDAE5352A05F2DA00F66414 /* Build configuration list for PBXProject "DualSenseInterfaceKit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -472,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = CLangTraining/DualSenseInterfaceKit.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DualSenseInterfaceKit/DualSenseInterfaceKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -492,13 +492,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/libusb/1.0.26/lib,
-					"$(PROJECT_DIR)/CLangTraining/USB",
+					"$(PROJECT_DIR)/DualSenseInterfaceKit/USB",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nhiro1109.DualSenseInterfaceKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "CLangTraining/DualSenseInterfaceKit-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DualSenseInterfaceKit/DualSenseInterfaceKit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -510,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = CLangTraining/DualSenseInterfaceKit.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DualSenseInterfaceKit/DualSenseInterfaceKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -530,13 +530,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/libusb/1.0.26/lib,
-					"$(PROJECT_DIR)/CLangTraining/USB",
+					"$(PROJECT_DIR)/DualSenseInterfaceKit/USB",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nhiro1109.DualSenseInterfaceKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "CLangTraining/DualSenseInterfaceKit-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DualSenseInterfaceKit/DualSenseInterfaceKit-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -544,7 +544,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4FDAE5352A05F2DA00F66414 /* Build configuration list for PBXProject "CLangTraining" */ = {
+		4FDAE5352A05F2DA00F66414 /* Build configuration list for PBXProject "DualSenseInterfaceKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FDAE5472A05F2DB00F66414 /* Debug */,

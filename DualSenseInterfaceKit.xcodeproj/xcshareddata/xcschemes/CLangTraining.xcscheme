@@ -17,7 +17,7 @@
                BlueprintIdentifier = "4FDAE5392A05F2DA00F66414"
                BuildableName = "DualSenseInterfaceKit.app"
                BlueprintName = "DualSenseInterfaceKit"
-               ReferencedContainer = "container:CLangTraining.xcodeproj">
+               ReferencedContainer = "container:DualSenseInterfaceKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "4FDAE5392A05F2DA00F66414"
             BuildableName = "DualSenseInterfaceKit.app"
             BlueprintName = "DualSenseInterfaceKit"
-            ReferencedContainer = "container:CLangTraining.xcodeproj">
+            ReferencedContainer = "container:DualSenseInterfaceKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "4FDAE5392A05F2DA00F66414"
             BuildableName = "DualSenseInterfaceKit.app"
             BlueprintName = "DualSenseInterfaceKit"
-            ReferencedContainer = "container:CLangTraining.xcodeproj">
+            ReferencedContainer = "container:DualSenseInterfaceKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
